@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyRunApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tyw-9M-zDv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGb-Ig-qmV" customClass="RoundButton" customModule="MyRunApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gSV-a6-grZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Start Run"/>
+                                <connections>
+                                    <action selector="runButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZk-lf-tlr"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bTp-Qr-1Jr">
+                                <rect key="frame" x="121.5" y="74" width="171" height="32"/>
+                                <segments>
+                                    <segment title="Miles"/>
+                                    <segment title="Kilometers"/>
+                                </segments>
+                                <connections>
+                                    <action selector="distanceUnitSelector:" destination="BYZ-38-t0r" eventType="valueChanged" id="EoE-q3-cPX"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWk-ay-LHd">
+                                <rect key="frame" x="20" y="135" width="374" height="38.5"/>
+                                <color key="backgroundColor" red="0.45879948139999999" green="0.98439329860000002" blue="0.41553062200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CGb-Ig-qmV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="26r-dO-NYf"/>
+                            <constraint firstItem="tyw-9M-zDv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="76E-Yv-opo"/>
+                            <constraint firstAttribute="bottom" secondItem="tyw-9M-zDv" secondAttribute="bottom" id="7XN-ag-zTv"/>
+                            <constraint firstItem="uWk-ay-LHd" firstAttribute="top" secondItem="bTp-Qr-1Jr" secondAttribute="bottom" constant="30" id="ATX-a1-4hl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uWk-ay-LHd" secondAttribute="trailing" constant="20" id="AbL-hp-AGh"/>
+                            <constraint firstItem="tyw-9M-zDv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C8w-Is-AJa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CGb-Ig-qmV" secondAttribute="bottom" constant="20" id="EUt-PT-1xX"/>
+                            <constraint firstItem="bTp-Qr-1Jr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="KNA-SV-136"/>
+                            <constraint firstItem="tyw-9M-zDv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="T86-kI-oH2"/>
+                            <constraint firstItem="bTp-Qr-1Jr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U3M-Ii-ttH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CGb-Ig-qmV" secondAttribute="trailing" constant="20" id="uCo-1Q-bj0"/>
+                            <constraint firstItem="uWk-ay-LHd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xar-mu-lwQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="tyw-9M-zDv" id="d51-cn-d5y"/>
+                        <outlet property="runButton" destination="CGb-Ig-qmV" id="bhl-VS-uVx"/>
+                        <outlet property="runDistanceLabel" destination="uWk-ay-LHd" id="8Ln-n7-O33"/>
+                        <outlet property="selectedDistanceUnit" destination="bTp-Qr-1Jr" id="qYZ-1d-pZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
