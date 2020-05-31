@@ -8,10 +8,12 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
 enum RunMode {
     case started
-    case stopped
+    case completed
+    case notStarted
 }
 
 struct Run {
@@ -33,8 +35,8 @@ struct Run {
         return runCoordinates
     }
     
-    func getRunDistance() -> Measurement<UnitLength>? {
-        guard locations.count > 1 else { return nil }
+    mutating func setRunDistance() {
+        guard locations.count > 1 else { return }
         
         var totalDistance = 0.0
         
@@ -46,17 +48,16 @@ struct Run {
             totalDistance += startLoc.distance(from: nextLoc)
         }
         
-        return Measurement(value: totalDistance, unit: UnitLength.meters)
+        self.distance = Measurement(value: totalDistance, unit: UnitLength.meters)
     }
     
-    func getRunDuration() -> Measurement<UnitDuration>? {
-        guard locations.count > 1, let firstLoc = locations.first!, let endLoc = locations.last! else { return nil }
-
+    mutating func setRunDuration() {
+        guard locations.count > 1, let firstLoc = locations.first!, let endLoc = locations.last! else { return }
+        
         let runDuration = endLoc.timestamp.timeIntervalSinceReferenceDate - firstLoc.timestamp.timeIntervalSinceReferenceDate
         
-        return Measurement(value: runDuration, unit: UnitDuration.seconds)
-        
-    }
+        self.duration = Measurement(value: runDuration, unit: UnitDuration.seconds)
+    }    
 }
 
 

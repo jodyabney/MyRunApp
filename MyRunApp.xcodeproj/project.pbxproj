@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B1207EA924736B69002BBB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207EA824736B69002BBB45 /* AppDelegate.swift */; };
 		B1207EAB24736B69002BBB45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207EAA24736B69002BBB45 /* SceneDelegate.swift */; };
-		B1207EAD24736B69002BBB45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207EAC24736B69002BBB45 /* ViewController.swift */; };
+		B1207EAD24736B69002BBB45 /* RecordRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207EAC24736B69002BBB45 /* RecordRunViewController.swift */; };
 		B1207EB024736B69002BBB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1207EAE24736B69002BBB45 /* Main.storyboard */; };
 		B1207EB224736B6A002BBB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1207EB124736B6A002BBB45 /* Assets.xcassets */; };
 		B1207EB524736B6A002BBB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1207EB324736B6A002BBB45 /* LaunchScreen.storyboard */; };
@@ -17,16 +17,17 @@
 		B1207EC224737214002BBB45 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207EC124737214002BBB45 /* Location.swift */; };
 		B1207EC424737409002BBB45 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207EC324737409002BBB45 /* RoundButton.swift */; };
 		B1207EC72473778D002BBB45 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207EC62473778D002BBB45 /* LocationService.swift */; };
-		B1207ECA24737BC9002BBB45 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207EC924737BC9002BBB45 /* UnitExtensions.swift */; };
-		B1207ECD24737C25002BBB45 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1207ECC24737C25002BBB45 /* FormatDisplay.swift */; };
 		B152CAFA24761C9500AA7DBE /* RunPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B152CAF924761C9500AA7DBE /* RunPoint.swift */; };
+		B1C1C875248440F0002C395B /* MapHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1C874248440F0002C395B /* MapHelpers.swift */; };
+		B1ED18022480695400A887BF /* DisplayRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED18012480695400A887BF /* DisplayRunViewController.swift */; };
+		B1ED180424807D9A00A887BF /* UIVIew+takeScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED180324807D9A00A887BF /* UIVIew+takeScreenShot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B1207EA524736B69002BBB45 /* MyRunApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRunApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1207EA824736B69002BBB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1207EAA24736B69002BBB45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B1207EAC24736B69002BBB45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1207EAC24736B69002BBB45 /* RecordRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRunViewController.swift; sourceTree = "<group>"; };
 		B1207EAF24736B69002BBB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1207EB124736B6A002BBB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1207EB424736B6A002BBB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,9 +36,10 @@
 		B1207EC124737214002BBB45 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B1207EC324737409002BBB45 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		B1207EC62473778D002BBB45 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		B1207EC924737BC9002BBB45 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
-		B1207ECC24737C25002BBB45 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
 		B152CAF924761C9500AA7DBE /* RunPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunPoint.swift; sourceTree = "<group>"; };
+		B1C1C874248440F0002C395B /* MapHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHelpers.swift; sourceTree = "<group>"; };
+		B1ED18012480695400A887BF /* DisplayRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRunViewController.swift; sourceTree = "<group>"; };
+		B1ED180324807D9A00A887BF /* UIVIew+takeScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+takeScreenShot.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +73,14 @@
 			isa = PBXGroup;
 			children = (
 				B1207EA824736B69002BBB45 /* AppDelegate.swift */,
-				B1207EAA24736B69002BBB45 /* SceneDelegate.swift */,
 				B1207EB124736B6A002BBB45 /* Assets.xcassets */,
-				B1207EB624736B6A002BBB45 /* Info.plist */,
 				B1207EBC24737098002BBB45 /* Controllers */,
 				B1207EC824737BAB002BBB45 /* Extensions */,
-				B1207ECB24737C13002BBB45 /* Helpers */,
+				B1C1C873248440D4002C395B /* Helpers */,
+				B1207EB624736B6A002BBB45 /* Info.plist */,
 				B1207EBE247370AB002BBB45 /* Models */,
+				B1207EAA24736B69002BBB45 /* SceneDelegate.swift */,
 				B1207EC524737772002BBB45 /* Services */,
-				B1207EAC24736B69002BBB45 /* ViewController.swift */,
 				B1207EBD247370A4002BBB45 /* Views */,
 			);
 			path = MyRunApp;
@@ -88,6 +89,8 @@
 		B1207EBC24737098002BBB45 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B1207EAC24736B69002BBB45 /* RecordRunViewController.swift */,
+				B1ED18012480695400A887BF /* DisplayRunViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,15 +126,15 @@
 		B1207EC824737BAB002BBB45 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B1207EC924737BC9002BBB45 /* UnitExtensions.swift */,
+				B1ED180324807D9A00A887BF /* UIVIew+takeScreenShot.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B1207ECB24737C13002BBB45 /* Helpers */ = {
+		B1C1C873248440D4002C395B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				B1207ECC24737C25002BBB45 /* FormatDisplay.swift */,
+				B1C1C874248440F0002C395B /* MapHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -208,15 +211,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B152CAFA24761C9500AA7DBE /* RunPoint.swift in Sources */,
+				B1ED180424807D9A00A887BF /* UIVIew+takeScreenShot.swift in Sources */,
 				B1207EC72473778D002BBB45 /* LocationService.swift in Sources */,
 				B1207EC424737409002BBB45 /* RoundButton.swift in Sources */,
-				B1207EAD24736B69002BBB45 /* ViewController.swift in Sources */,
+				B1207EAD24736B69002BBB45 /* RecordRunViewController.swift in Sources */,
 				B1207EC0247370E3002BBB45 /* Run.swift in Sources */,
+				B1ED18022480695400A887BF /* DisplayRunViewController.swift in Sources */,
 				B1207EC224737214002BBB45 /* Location.swift in Sources */,
+				B1C1C875248440F0002C395B /* MapHelpers.swift in Sources */,
 				B1207EA924736B69002BBB45 /* AppDelegate.swift in Sources */,
-				B1207ECD24737C25002BBB45 /* FormatDisplay.swift in Sources */,
 				B1207EAB24736B69002BBB45 /* SceneDelegate.swift in Sources */,
-				B1207ECA24737BC9002BBB45 /* UnitExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abneyanalytics.MyRunApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -388,7 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abneyanalytics.MyRunApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

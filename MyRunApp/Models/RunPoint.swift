@@ -34,8 +34,8 @@ class RunPoint: NSObject, MKAnnotation {
         }
         
         let df = DateFormatter()
-        df.dateStyle = .full
-        df.timeStyle = .full
+        df.dateStyle = .medium
+        df.timeStyle = .medium
         self.subtitle = df.string(from: timestamp)
 
     }
